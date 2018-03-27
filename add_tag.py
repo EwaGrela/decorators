@@ -17,4 +17,3 @@ def write_something(sth):
 def say_hello():
 	return "hello"
 
-print(say_hello())
