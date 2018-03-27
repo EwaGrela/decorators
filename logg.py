@@ -23,4 +23,3 @@ def my_func(a, b, c=None, d=False):
 @log_this(logger, level=logging.DEBUG, format='%s: %s = %s')
 def new_func(a, b=None, c=True):
 	return a**3
-

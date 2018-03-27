@@ -16,5 +16,3 @@ def write_something(sth):
 @add_tag("p")
 def say_hello():
 	return "hello"
-
-

@@ -5,13 +5,11 @@ def validate_json(*args):
 	def validator(func):
 		def inner(data):
 			res = func(data)
-			keys = sorted(list(json.loads("".join(data)).keys()))
+			keys = sorted(list(json.loads(data).keys()))
 			if keys == sorted(list(args)):
-				print("OK")
+				return res
 			else:
-				print("JSON not OK")
-				raise ValueError
-			return res
+				raise ValueError			
 		return inner
 	return validator
 
