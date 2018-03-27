@@ -3,7 +3,7 @@ def add_tag(tag):
 	def adder(func):
 		def inner_func(*args, **kwargs):
 			res = func(*args, **kwargs)
-			return f"<{tag}>{res}<{tag}/>"
+			return f"<{tag}>{res}</{tag}>"
 		return inner_func
 	return adder
 
@@ -16,3 +16,5 @@ def write_something(sth):
 @add_tag("p")
 def say_hello():
 	return "hello"
+
+print(say_hello())
