@@ -24,7 +24,3 @@ def process_json(json_data):
 def check_json(data):
     return json.dumps(data)
     
-#calling functions:
-print(process_json('{"first_name": "James", "last_name": "Bond"}'))
-print(check_json('{"name":"James", "surname":"Bond"}'))
-print(check_json('{"name":"James", "lastname":"Bond"}'))

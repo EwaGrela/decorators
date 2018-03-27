@@ -24,6 +24,3 @@ def my_func(a, b, c=None, d=False):
 def new_func(a, b=None, c=True):
 	return a**3
 
-#calling functions to test them and see results:
-print(my_func(1, 2, c=False,d=True))
-print(new_func(5, c=False))

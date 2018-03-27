@@ -18,6 +18,3 @@ def say_hello():
 	return "hello"
 
 
-#testing functions:
-print(write_something("napisz cokolwiek"))
-print(say_hello())
